@@ -16,6 +16,7 @@ header.innerHTML = `
     </nav>
 </div>
 
+
 `;
 
 // Adicionar classe ao header pode ser usado no css pra estilizar
