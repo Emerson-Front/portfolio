@@ -49,18 +49,17 @@ section.sobre .foto {
     height: 300px;
     margin: auto 0;
     border-radius: 50%;
-    border: 5px solid white;
-    background-image: url('/imagens/icons/meu_icone.png');
-    background-size: cover;
-    background-position: center;
 
+}
+
+.foto img {
+    border-radius: 50%;
+    border: 5px solid white;
 }
 
 section.sobre .foto p{
     color: rgb(255, 255, 255);
     background-color: rgba(51, 51, 51, 0.575);
-    border-radius: 20px;
-    margin-top: 100px;
     font-style: italic;
     font-weight: bolder;
     text-align: center;
@@ -87,7 +86,7 @@ section.sobre .border-bottom {
 
 section.projetos {
     text-align: center;
-    padding: 80px 20px;
+    padding: 80px 0;
     background-color: rgb(10, 10, 10);
     color: white;
     margin: 100px auto;
@@ -103,10 +102,10 @@ section.projetos .box {
 
 section.projetos .box .projeto, .loading {
     border: 2px solid rgb(10,10,10);
-
-    min-width: 300px;
+    width: 33.3%;
+    
     height: 200px;
-    margin: 50px auto;
+    margin: 50px 0;
     background-color: white;
     cursor: pointer;
 }
@@ -310,3 +309,6 @@ section.apresentacao .animacao {
         color: rgb(0, 0, 0)
     }
 }
+
+
+
