@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_usuario.css">
+    <title>Catálogo</title>
+
+</head>
+
+<body>
+
+    <header>
+
+
+        <div class="box">
+            <h1 href="#">Catálogo</h1>
+            <nav>
+                <ul>
+                    <p style="color: rgba(255, 255, 255, 0.61);">Em desenvolvimento</p>
+                    <li><a href="#">(Login</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Sobre)</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div id="welcomeMessage"></div>
+
+    <div class="box">
+
+
+        <nav class="container">
+            <input type="text" id="nomeAnime" placeholder="Digite o nome do anime">
+            <button class="addAnime" onclick="criarBarras()">Adicionar Anime</button>
+
+            <ul id="container">
+                <!--Lista preenchida dinamicamente-->
+            </ul>
+            <div id="animesSalvos"></div>
+        </nav>
+    </div>
+
+
+
+    <div class="box">
+        <p style="color: rgba(255, 255, 255, 0.5);">Por enquanto os dados vão ser salvos apenas no seu navegador</p>
+        <p style="color: rgba(255, 255, 255, 0.5);">Use o arquivo como "Backup"</p>
+        <br>
+        <!-- Botão para baixar o arquivo com os dados salvos-->
+        <button class="download" onclick="salvarArquivo()">Salvar dados em Arquivo</button>
+        <!-- Elemento para selecionar arquivo, inicialmente oculto -->
+        <input type="file" id="fileInput" style="display: none;">
+        <!-- Botão para abrir a janela de seleção de arquivo -->
+        <button class="upload" onclick="selecionarArquivo()">Carregar dados do Arquivo</button>
+        
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="box">
+        <nav class="container">
+
+            <h1>Concluídos</h1>
+            <p style="color: white;">(Em desenvolvimento)</p>
+            <ul id="container">
+
+                <!--Lista preenchida dinamicamente-->
+            </ul>
+            <div id="animesSalvos"></div>
+        </nav>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="box display">
+            <div class="footer-lado">
+                <h3>Contato</h3>
+                <p>Telefone: Hoje não</p>
+                <p>Email: Hoje não</p>
+            </div>
+        
+            <div class="footer-lado">
+                <!-- <h3>Redes Sociais</h3> -->
+                <ul>
+                    <li><a href="https://github.com/NewAgainn" target="_blank"><h2><img class="icon" src="https://newagainn.github.io/imagens/icons/GitHub_icon.png">GitHub</h2></a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="footer-info">© 2023 Ainda em desenvolvimento</p>
+    </footer>
+        
+    <script src="script_usuario.js"></script>
+
+</body>
+
+</html>
