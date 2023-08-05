@@ -350,7 +350,22 @@ footer ul li a{
         margin: 0 auto;
     }
 
+    header .box {
+        display: flex;
+        flex-direction: column;
+    }
 
+    header nav p {
+        margin: 5px 0;
+    }
+
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        margin: 3px 0;
+    }
 }
 
 
