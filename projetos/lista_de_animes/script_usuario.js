@@ -125,7 +125,7 @@ function exibirAnimes() {
       '<button onclick="alterarEpisodio(' + i + ', -1)">-</button>' +
       '<button onclick="alterarEpisodio(' + i + ', 1)">+</button>' +
       '</div>' +
-      '<button id="salvarBtn-' + i + '" class="salveBtn" style="display: ' + (anime.alterado ? 'block' : 'none') + ';" onclick="salvarAnime(' + i + ')">\u21B5</button>' +
+      '<button id="salvarBtn-' + i + '" class="salveBtn" style="display: ' + (anime.alterado ? 'block' : 'none') + ';" onclick="salvarAnime(' + i + ')">+</button>' +
       '<button class="deleteBtn" onclick="removerAnime(' + i + ')">×</button>';
 
     container.appendChild(li);
