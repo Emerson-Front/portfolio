@@ -1,0 +1,84 @@
+
+section#apresentacao {
+    background-color: rgb(10, 10, 10);
+    text-align: center;
+    padding: 200px 0;
+    color: white;
+    display: flex;
+    margin-top: 100px;
+}
+
+section#apresentacao .texto {
+    margin: auto;
+    width: 100%;
+    line-height: 40px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+
+/* Animação dos números --> */
+
+section#apresentacao .animacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.linha {
+    display: flex;
+}
+
+.numero {
+    font-size: 24px;
+    color: rgb(0, 179, 15);
+    opacity: 0;
+    animation: descer 3s linear infinite;
+    margin: 5px;
+}
+
+.numero:nth-child(odd) {
+    animation-delay: 1.4s;
+}
+
+.numero:nth-child(even) {
+    animation-delay: 0.2s;
+}
+
+@keyframes descer {
+    0% {
+        transform: translateY(-200%);
+        opacity: 0;
+        color: rgb(0, 136, 214);
+    }
+
+    50% {
+        opacity: 1;
+        color: rgb(0, 214, 203);
+    }
+
+    100% {
+        transform: translateY(300%);
+        opacity: 0;
+        color: rgb(0, 214, 36);
+    }
+}
+
+/* <-- Animação dos números */
+
+
+
+@media screen and (max-width: 900px) {
+    .centralizar{
+        flex-wrap: wrap;
+    }
+
+    .bloco_2{
+        width: 100%;
+        margin: auto;
+    }
+
+    .animacao{
+        margin-top: 50px;
+    }
+}

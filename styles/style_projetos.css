@@ -1,27 +1,130 @@
-.projeto_1 {
-    transition: transform 0.3s ease;
-    display: inline-block;
+section#projetos {
+    text-align: center;
+    padding: 80px 10px;
+    background-color: rgb(10, 10, 10);
+    color: white;
+    margin: 100px auto;
+    font-size: 30px;
 }
 
-.projeto_1:hover {
-    transform: scale(1.05);
+section#projetos h2{
+    margin-bottom: 50px;
 }
 
 
-section.projetos .box .projeto_1 a {
-    display: block;
-    width: 100%;
+.projetos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.projeto {
+    height: 200px;
+    border: 2px solid rgb(10, 10, 10);
+    margin: 5px auto;
+    background-color: rgb(255, 255, 255);
+    transition: 0.3s;
+}
+
+.projeto:hover{
+    transform: scale(1.5);
+    background: rgb(10, 10, 10);
+    border: 0;
+    box-shadow: 0px 0px 20px 10px rgb(151, 151, 151);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.projeto a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100%;
-    padding: 25% 0;
-    font-weight: 800;
-    font-size: 36px;
+    background-size: cover;
+    background-position: center;
+    color: white;
     text-decoration: none;
-    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    font-variant: small-caps;
+    transition: 0.3s;
 }
 
-section.projetos .box .projeto_1 a:hover {
-    text-decoration: underline;
-    transition: 0.5s;
-    background: rgb(161, 144, 140);
-    color: beige;
+.projeto a:hover {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    box-shadow: inset 0px 0px 20px 50px rgb(10, 10, 10);
+    border: 30px solid transparent;
+    border-radius: 50%;
 }
+
+
+
+
+
+/* Animação da palavra loading --> */
+.loading a {
+    color: #333;
+}
+
+.loading a span {
+    margin: 0 5px;
+    animation: pulse 1.5s infinite ease-in-out;
+}
+
+.loading a span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.loading a span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.loading a span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.loading a span:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
+.loading a span:nth-child(5) {
+    animation-delay: 0.8s;
+}
+
+.loading a span:nth-child(6) {
+    animation-delay: 1s;
+}
+
+.loading a span:nth-child(7) {
+    animation-delay: 1.2s;
+}
+
+.loading a span:nth-child(8) {
+    animation-delay: 1.4s;
+}
+
+.loading a span:nth-child(9) {
+    animation-delay: 1.6s;
+}
+
+.loading a span:nth-child(10) {
+    animation-delay: 1.8s;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* <-- Animação da palavra loading */
+

@@ -8,39 +8,45 @@
 
     <!-- Folha de Estilo principal-->
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/style_mobile.css">
-
-    <!-- Folha de Estilo header -->
-    <link rel="stylesheet" href="styles/style_header.css">
-
-    <!-- Folha de Estilo Projetos -->
-    <link rel="stylesheet" href="styles/style_projetos.css">
-
-    <!-- Folha de Estilo footer -->
-    <link rel="stylesheet" href="styles/style_footer.css">
 
     <title>Portfólio</title>
 </head>
 
 <body>
-    <!--Header veio de um arquivo externo-->
-    <script src="static/header/header.js"></script>
 
-    <section class="apresentacao">
+    <header id="header">
 
-        <div class="texto">
+        <div class="centralizar">
+
+
+            <a class="logo" href="/"><img class="icon" src="imagens/icons/meu_icone.png"> Emerson</a>
+
+
+            <ul id="menu-header">
+                <li><a href="#sobre" data-target="#sobre">Sobre</a></li>
+                <li><a href="#projetos" data-target="#projetos">Projetos</a></li>
+                <li><a href="#footer" data-target="#footer">Contato</a></li>
+            </ul>
+        </div>
+
+    </header>
+
+    <section id="apresentacao" class="centralizar">
+
+        <div class="texto bloco_2">
             <h2>Olá, eu sou <br> <span id="nome">Emerson Teixeira</span></h2>
             <p>um futuro programador FullStack</p>
-            <p>atualmente focando no desenvolvimento Front End.</p>
+            <p>atualmente estudante de ciências da computação.</p>
         </div>
 
-        <div class="animacao">
+        <div class="animacao bloco_2">
             <div class="linha">
-                <span class="numero">01</span>
-                <span class="numero">10</span>
-                <span class="numero">01</span>
-                <span class="numero">10</span>
-                <span class="numero">01</span>
+                <span class="numero">1</span>
+                <span class="numero">0</span>
+                <span class="numero">1</span>
+                <span class="numero">0</span>
+                <span class="numero">1</span>
+                <span class="numero">0</span>
             </div>
             <div class="linha">
                 <span class="numero">1</span>
@@ -48,20 +54,15 @@
                 <span class="numero">1</span>
                 <span class="numero">0</span>
                 <span class="numero">1</span>
+                <span class="numero">0</span>
             </div>
             <div class="linha">
-                <span class="numero">0</span>
                 <span class="numero">1</span>
                 <span class="numero">0</span>
                 <span class="numero">1</span>
                 <span class="numero">0</span>
-            </div>
-            <div class="linha">
-                <span class="numero">01</span>
-                <span class="numero">10</span>
-                <span class="numero">01</span>
-                <span class="numero">10</span>
-                <span class="numero">01</span>
+                <span class="numero">1</span>
+                <span class="numero">0</span>
             </div>
             <div class="linha">
                 <span class="numero">1</span>
@@ -69,20 +70,15 @@
                 <span class="numero">1</span>
                 <span class="numero">0</span>
                 <span class="numero">1</span>
+                <span class="numero">0</span>
             </div>
             <div class="linha">
-                <span class="numero">0</span>
                 <span class="numero">1</span>
                 <span class="numero">0</span>
                 <span class="numero">1</span>
                 <span class="numero">0</span>
-            </div>
-            <div class="linha">
-                <span class="numero">01</span>
-                <span class="numero">10</span>
-                <span class="numero">01</span>
-                <span class="numero">10</span>
-                <span class="numero">01</span>
+                <span class="numero">1</span>
+                <span class="numero">0</span>
             </div>
             <div class="linha">
                 <span class="numero">1</span>
@@ -90,134 +86,134 @@
                 <span class="numero">1</span>
                 <span class="numero">0</span>
                 <span class="numero">1</span>
+                <span class="numero">0</span>
+            </div>
+            <div class="linha">
+                <span class="numero">1</span>
+                <span class="numero">0</span>
+                <span class="numero">1</span>
+                <span class="numero">0</span>
+                <span class="numero">1</span>
+                <span class="numero">0</span>
+            </div>
+            <div class="linha">
+                <span class="numero">1</span>
+                <span class="numero">0</span>
+                <span class="numero">1</span>
+                <span class="numero">0</span>
+                <span class="numero">1</span>
+                <span class="numero">0</span>
             </div>
         </div>
 
     </section>
 
-    <section class="sobre" id="sobre">
 
-        <div class="foto">
-            <img src="imagens/icons/meu_icone.png">
-            <p>A procura de uma foto profissional.</p>
 
+
+
+    <section id="sobre">
+
+        <div class="sobre centralizar">
+
+            <div class="foto">
+                <img src="imagens/icons/meu_icone.png">
+
+            </div>
+
+            <div class="texto">
+                <h2>Sobre mim</h2>
+                <div class="border-bottom"></div>
+                <p>Sou um entusiasta da programação, sempre motivado pela curiosidade e pela vontade de aprender.<br>
+                    Com foco em desenvolvimento web, possuo sólido conhecimento em HTML, CSS, PHP e JavaScript, criando
+                    interfaces intuitivas e atraentes.<br> Estou sempre em busca de aprimorar minhas habilidades,
+                    participando de cursos online e explorando novas tecnologias.<br>
+                    Estou confiante na minha capacidade de enfrentar desafios e empolgado com as oportunidades de criar
+                    soluções inovadoras no mundo digital.</p>
+            </div>
         </div>
-
-        <div class="texto">
-            <h2>Sobre mim</h2>
-            <div class="border-bottom"></div>
-            <p>Sou um indivíduo esforçado, curioso e apaixonado por programação. <br> Atualmente, estou dedicando meu
-                tempo e esforço para me tornar um programador fullstack, com foco em habilidades de front-end como HTML
-                e CSS. <br> Busco constantemente cursos online e outras fontes de conhecimento para aprimorar minhas
-                habilidades nessa área. <br> Apesar de não ter experiência profissional, estou sempre aprendendo e
-                tentando alcançar meus objetivos. <br> Estou confiante em minhas habilidades para desenvolver interfaces
-                de usuário atraentes e intuitivas e animado com as oportunidades que virão pela frente.</p>
-        </div>
-
 
     </section>
 
-    <section class="projetos" id="projetos">
+
+
+
+
+
+    <section class="centralizar" id="projetos">
         <h2>Projetos</h2>
 
-        <div class="box">
-            <div class="projeto projeto_1">
-                <a href="https://episodio-zero.rf.gd/">Episódio Zero</a>
+        <div class="projetos">
+
+
+            <div class="projeto bloco_3">
+                <a href="https://episodio-zero.rf.gd/" target="_blank"
+                    style="background-image: url('imagens/ep0.webp')">Episódio Zero</a>
             </div>
 
-            <div class="projeto em-breve">
-                <div class="loader"></div>
+            <div class="projeto loading bloco_3">
+                <a href="#">
+                    <span>E</span>
+                    <span>M</span>
+                    <span></span>
+                    <span>B</span>
+                    <span>R</span>
+                    <span>E</span>
+                    <span>V</span>
+                    <span>E</span>
+                    <span>.</span>
+                    <span>.</span>
+                    <span>.</span>
+                </a>
             </div>
 
-            <div class="loading">
-                <span>L</span>
-                <span>O</span>
-                <span>A</span>
-                <span>D</span>
-                <span>I</span>
-                <span>N</span>
-                <span>G</span>
-                <span>.</span>
-                <span>.</span>
-                <span>.</span>
+            <div class="projeto loading bloco_3">
+                <a href="#">
+                    <span>E</span>
+                    <span>M</span>
+                    <span></span>
+                    <span>B</span>
+                    <span>R</span>
+                    <span>E</span>
+                    <span>V</span>
+                    <span>E</span>
+                    <span>.</span>
+                    <span>.</span>
+                    <span>.</span>
+                </a>
             </div>
+
         </div>
-
-
-
-        <div class="box">
-            <div class="loading">
-                <span>L</span>
-                <span>O</span>
-                <span>A</span>
-                <span>D</span>
-                <span>I</span>
-                <span>N</span>
-                <span>G</span>
-                <span>.</span>
-                <span>.</span>
-                <span>.</span>
-            </div>
-
-            <div class="projeto em-breve">
-                <div class="loader"></div>
-            </div>
-
-            <div class="loading">
-                <span>L</span>
-                <span>O</span>
-                <span>A</span>
-                <span>D</span>
-                <span>I</span>
-                <span>N</span>
-                <span>G</span>
-                <span>.</span>
-                <span>.</span>
-                <span>.</span>
-            </div>
-        </div>
-
-
-
-        <div class="box">
-            <div class="loading">
-                <span>L</span>
-                <span>O</span>
-                <span>A</span>
-                <span>D</span>
-                <span>I</span>
-                <span>N</span>
-                <span>G</span>
-                <span>.</span>
-                <span>.</span>
-                <span>.</span>
-            </div>
-
-            <div class="projeto em-breve">
-                <div class="loader"></div>
-            </div>
-
-            <div class="loading">
-                <span>L</span>
-                <span>O</span>
-                <span>A</span>
-                <span>D</span>
-                <span>I</span>
-                <span>N</span>
-                <span>G</span>
-                <span>.</span>
-                <span>.</span>
-                <span>.</span>
-            </div>
-        </div>
-
-
-
 
     </section>
 
-    <!--Footer veio de um arquivo externo-->
-    <script src="static/footer/footer.js"></script>
+    <footer id="footer">
+
+        <div class="centralizar">
+            <div class="bloco_2">
+                <h2>Contato</h2>
+                <p>Telefone: <span>(11) 98189-5060</span></p>
+                <p>Email: <span>etads.sabio@gmail.com</span></p>
+            </div>
+
+            <div class="bloco_2">
+                <h2>Links</h2>
+                <ul>
+                    <li><a href="https://github.com/Emerson-Front" target="_blank"><i class="bi bi-github"></i>
+                            GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/emerson-teixeira-05877a327" target="_blank"><i
+                                class="bi bi-linkedin"></i> Linkedin</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="footer-info">© 2024 Meu Portfólio</p>
+
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.js"></script>
+    <script src="js/scripts.js"></script>
+
 </body>
 
 </html>

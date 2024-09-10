@@ -1,0 +1,71 @@
+
+
+section#sobre {
+    background-color: rgb(50, 50, 50);
+    margin-top: 100px;
+    padding-bottom: 30px;
+}
+
+.sobre{
+    text-align: justify;
+    color: white;
+    padding: 100px 150px;
+    line-height: 35px;
+    display: flex;
+}
+
+.sobre .foto {
+    width: 300px;
+    height: 300px;
+    margin: auto 0;
+    border-radius: 50%;
+
+}
+
+
+.foto img {
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.sobre .foto p{
+    color: rgb(255, 255, 255);
+    background-color: rgba(51, 51, 51, 0.575);
+    font-style: italic;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 24px;
+}
+
+.sobre .texto {
+    width: 75%;
+    margin-left: 50px;
+    font-size: 20px;
+}
+
+.sobre h2 {
+    font-size: 40px;
+}
+
+.sobre .border-bottom {
+    width: 250px;
+    padding: 3px;
+    background-color: rgb(118, 255, 164);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+
+@media screen and (max-width: 900px) {
+    .sobre{
+        padding: 0;
+
+    }
+    .sobre .texto h2{
+        margin-top: 100px;
+    }
+
+    .sobre .foto{
+        margin: 50px auto;
+    }
+}

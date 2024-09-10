@@ -1,69 +1,57 @@
-/* Header --> */
 header {
-    background-color: rgb(10, 10, 10);
-    width: 100%;
-    border-bottom: 5px solid rgb(60,60,60);
+    background: rgb(10, 10, 10);
+    border-bottom: 5px solid rgb(60, 60, 60);
     transition: 0.3s;
 }
+
 header:hover{
-    background-color: rgb(30,30,30);
-    border-bottom: 5px solid rgb(80,80,80);
+    background-color: rgb(25, 25, 25);
 }
 
-
-
-.box {
-    color: #fff;
-    /* Cor do texto */
+header .centralizar {
     display: flex;
-    /* Exibição como elemento flexível */
     justify-content: space-between;
-    /* Alinhamento horizontal dos itens */
     align-items: center;
-    /* Alinhamento vertical dos itens */
-    padding: 20px;
-    /* Espaçamento interno */
-    max-width: 1200px;
-    margin: 0 auto;
-
+    padding: 10px 20px;
 }
 
-/* Estilo para o texto do logo */
-.logo a {
-    font-size: 24px;
-    /* Tamanho da fonte */
-    font-weight: bold;
-    /* Peso da fonte */
-    text-transform: uppercase;
-    /* Transformação do texto para caixa alta */
-    text-decoration: none;
-    color: white;
+header .logo .icon {
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
 }
 
-/* Estilos para o menu de navegação */
-.box nav ul {
+header .logo{
     display: flex;
-    /* Exibição como elemento flexível */
-}
-
-.box nav ul li {
-    margin-left: 20px;
-    /* Espaçamento entre os itens */
-    list-style: none;
-    /* Remoção dos marcadores da lista */
-}
-
-.box nav ul li a {
-    color: #ffffff;
-    /* Cor do texto do link */
+    align-items: center;
+    color: white;
     text-decoration: none;
-    /* Remoção do sublinhado */
-    font-size: 16px;
-    /* Tamanho da fonte */
+    font-size: 20px;
+    font-weight: bold;
+    font-variant: small-caps;
+    text-transform: uppercase;
 }
 
-.box nav ul li a:hover {
-    text-decoration: underline;
+header ul {
+    display: flex;
 }
 
-/* <-- Header */
+
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    border-bottom: 1px solid transparent;
+    transition: 0.3s;
+}
+
+header ul li a:hover{
+    color: rgb(199, 113, 0);
+    border-bottom: 1px solid ;
+}
+
+
+header li {
+    list-style: none;
+}
