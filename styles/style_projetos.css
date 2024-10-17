@@ -7,7 +7,7 @@ section#projetos {
     font-size: 30px;
 }
 
-section#projetos h2{
+section#projetos h2 {
     margin-bottom: 50px;
 }
 
@@ -21,12 +21,12 @@ section#projetos h2{
 .projeto {
     height: 200px;
     border: 2px solid rgb(10, 10, 10);
-    margin: 5px auto;
+    margin: 5px auto 50px auto;
     background-color: rgb(255, 255, 255);
     transition: 0.3s;
 }
 
-.projeto:hover{
+.projeto:hover {
     transform: scale(1.5);
     background: rgb(10, 10, 10);
     border: 0;
@@ -35,7 +35,7 @@ section#projetos h2{
     z-index: 1;
 }
 
-.projeto a{
+.projeto a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,7 +58,11 @@ section#projetos h2{
     border-radius: 50%;
 }
 
-
+.projeto p {
+    margin: 10px 0;
+    border-radius: 20px;
+    box-shadow: inset 0px 0px 20px rgb(10, 10, 10);
+}
 
 
 
@@ -127,4 +131,3 @@ section#projetos h2{
 }
 
 /* <-- Animação da palavra loading */
-
