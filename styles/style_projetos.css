@@ -1,73 +1,136 @@
-section#projetos {
+/* Estilo da seção de projetos */
+#projetos {
+    padding: 6rem 2%;
+    position: relative;
+    overflow: hidden;
+}
+
+#projetos h2 {
+    font-size: 3rem;
     text-align: center;
-    padding: 80px 10px;
-    background-color: rgb(10, 10, 10);
-    color: white;
-    margin: 100px auto;
-    font-size: 30px;
+    margin-bottom: 4rem;
+    color: #333;
+    font-weight: 600;
+    position: relative;
 }
 
-section#projetos h2 {
-    margin-bottom: 50px;
+#projetos h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    border-radius: 2px;
 }
 
-
+/* Container dos projetos */
 .projetos {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
+/* Estilo de cada projeto */
 .projeto {
-    height: 200px;
-    border: 2px solid rgb(10, 10, 10);
-    margin: 5px auto 50px auto;
-    background-color: rgb(255, 255, 255);
-    transition: 0.3s;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    position: relative;
+
 }
 
 .projeto:hover {
-    transform: scale(1.5);
-    background: rgb(10, 10, 10);
-    border: 0;
-    box-shadow: 0px 0px 20px 10px rgb(151, 151, 151);
-    border-radius: 50%;
-    z-index: 1;
+    transform: translateY(-30px);
+    scale: 1.05;
 }
 
 .projeto a {
+    display: block;
+    height: 220px;
+    background: #f0f0f0;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+.projeto p {
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 1.1rem;
+    color: #555;
+    font-weight: 500;
+    margin: 0;
+    transition: color 0.3s ease;
+}
+
+.projeto:hover p {
+    color: #6a11cb;
+}
+
+/* Efeito de loading moderno */
+.projeto.loading {
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.projeto.loading a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(212, 212, 212, 0.8), transparent);
+    animation: loading-shine 1.5s infinite;
+}
+
+@keyframes loading-shine {
+    0% {
+        left: -100%;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+.projeto.loading a {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    color: white;
-    text-decoration: none;
-    font-size: 30px;
-    font-weight: bold;
-    font-variant: small-caps;
-    transition: 0.3s;
+    background: #c8c8c8;
+    position: relative;
+    overflow: hidden;
 }
 
-.projeto a:hover {
-    color: rgb(255, 255, 255);
-    cursor: pointer;
-    box-shadow: inset 0px 0px 20px 50px rgb(10, 10, 10);
-    border: 30px solid transparent;
-    border-radius: 50%;
+.projeto.loading span {
+    font-size: 1.5rem;
+    color: #585858;
+    animation: loading-bounce 1.2s infinite ease-in-out;
 }
 
-.projeto p {
-    margin: 10px 0;
-    border-radius: 20px;
-    box-shadow: inset 0px 0px 20px rgb(10, 10, 10);
+@keyframes loading-bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
 }
 
 
 
-/* Animação da palavra loading --> */
+
 .loading a {
+    text-decoration: none;
     color: #333;
 }
 
@@ -116,18 +179,37 @@ section#projetos h2 {
     animation-delay: 1.8s;
 }
 
-@keyframes pulse {
-    0% {
-        transform: scale(1);
+
+
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #projetos h2 {
+        font-size: 2.5rem;
     }
 
-    50% {
-        transform: scale(1.5);
+    .projetos {
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 2rem;
     }
 
-    100% {
-        transform: scale(1);
+    .projeto a {
+        height: 180px;
     }
 }
 
-/* <-- Animação da palavra loading */
+/* Efeito de hover no texto */
+.projeto p::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #6a11cb;
+    margin: 0 auto;
+    transition: width 0.3s ease;
+}
+
+.projeto:hover p::after {
+    width: 50px;
+}
